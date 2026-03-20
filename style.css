@@ -9,6 +9,10 @@ header {
   width: 100%;
 }
 
+.logo {
+  width: 28rem;
+}
+
 .header-content {
   display: flex;
   align-items: center;
