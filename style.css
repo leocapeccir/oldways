@@ -40,7 +40,7 @@ i {
 .header-button {
   border: 1px solid #FFF;
   padding: 8px 24px;
-  border-radius: 4px;
+  font-weight: bold;
   color: #FFF;
   background-color: transparent;
   transition: background-color 0.8s;
@@ -56,7 +56,8 @@ i {
   align-items: center;
   justify-content: center;
   margin-top: 14px;
-  width: 45rem;
+  margin-left: 130px;
+  width: 40rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,6 +74,7 @@ i {
   .header-logo img {
     width: 160px;
     margin-top: 46px;
+    margin-left: 0;
   }
   .header-button {
     display: none;
@@ -106,7 +108,7 @@ i {
 
 .hero {
   color: #FFF;
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,7 +334,7 @@ i {
   }
 }
 body {
-  font-family: "Sora", sans-serif;
+  font-family: "Bree Serif", sans-serif;
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -357,3 +359,21 @@ a {
   cursor: pointer;
   text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 470px) {
+  .header-logo {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 471px) and (max-width: 769px) {
+  .header-logo {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 995px) {
+  .header-button {
+display: inline-block; 
+text-align: center; }
+}
