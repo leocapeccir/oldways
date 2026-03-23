@@ -669,9 +669,38 @@ text-align: center; }
 }
 
 @media (max-width: 472px) {
+
   .about-content {
-    flex-direction: row;
-    gap: 169px;
-    text-align: left;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
   }
+
+  /* 🔥 CAROUSEL EM COLUNA */
+  .carousel-track {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .carousel-track img {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  /* REMOVE efeito 3D */
+  .carousel-track img.left,
+  .carousel-track img.right,
+  .carousel-track img.active {
+    transform: none !important;
+  }
+
+
+
 }
